@@ -1,3 +1,9 @@
+# revision 21400
+# category Package
+# catalog-ctan /macros/latex/contrib/lettre
+# catalog-date 2007-01-08 22:21:56 +0100
+# catalog-license lppl
+# catalog-version 2.346
 Name:		texlive-lettre
 Version:	2.346
 Release:	1
@@ -86,6 +92,7 @@ the Observatoire de Geneve.
 %doc %{_texmfdistdir}/doc/latex/lettre/testfaxf.tex
 %doc %{_texmfdistdir}/doc/latex/lettre/testfaxf1.ps
 %doc %{_texmfdistdir}/doc/latex/lettre/testfaxf2.ps
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -96,3 +103,5 @@ the Observatoire de Geneve.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
