@@ -93,3 +93,17 @@ the Observatoire de Geneve.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.346-2
++ Revision: 753269
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.346-1
++ Revision: 718845
+- texlive-lettre
+- texlive-lettre
+- texlive-lettre
+- texlive-lettre
+
