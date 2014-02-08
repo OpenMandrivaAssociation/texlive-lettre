@@ -6,7 +6,7 @@
 # catalog-version 2.346
 Name:		texlive-lettre
 Version:	2.346
-Release:	2
+Release:	3
 Summary:	Letters and faxes in French
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lettre
