@@ -1,6 +1,6 @@
 Name:		texlive-lettre
 Version:	3.000
-Release:	1
+Release:	2
 Summary:	Letters and faxes in French
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lettre
