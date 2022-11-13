@@ -1,12 +1,12 @@
 Name:		texlive-lettre
-Version:	3.000
-Release:	2
+Version:	54722
+Release:	1
 Summary:	Letters and faxes in French
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lettre
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ Developed from the ancestor of the standard letter class, at
 the Observatoire de Geneve.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -31,7 +31,7 @@ the Observatoire de Geneve.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
