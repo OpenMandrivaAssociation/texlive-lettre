@@ -3,7 +3,7 @@ Version:	54722
 Release:	2
 Summary:	Letters and faxes in French
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lettre
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/lettre
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lettre.doc.r%{version}.tar.xz
